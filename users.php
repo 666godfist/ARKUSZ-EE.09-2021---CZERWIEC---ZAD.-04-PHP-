@@ -34,7 +34,20 @@
         </form>
         <br>
         <hr>
-        
+        <?php
+            if(isset($_POST['id'])){
+                $id = $_POST['id'];
+                $res2 = "SELECT osoby.imie, osoby.nazwisko, osoby.rok_urodzenia, osoby.opis, osoby.zdjecie, hobby.nazwa FROM osoby, hobby WHERE osoby.Hobby_id=hobby.id AND osoby.id = $id";
+                $wynik2 = mysqli_query($con, $res2);
+                $wiersz2=mysqli_fetch_array($wynik2);
+                echo "<h2>$id. $wiersz2[0] $wiersz2[1]</h2>";
+                echo "<img src='$wiersz2[4]' alt='$id'>";
+                echo "<p>Rok urodzenia: $wiersz2[2]</p>";
+                echo "<p>Opis: $wiersz2[3]</p>";
+                echo "<p>Hobby: $wiersz2[5]</p>";
+            }
+            mysqli_close($con);
+        ?>
     </div>
     <div class="stopka">
         Stronę wykonał: Paweł Kozłowski

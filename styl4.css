@@ -14,6 +14,7 @@ body{
     width: 50%;
     height: 650px;
     float: left;
+
 }
 
 .prawy{
@@ -21,6 +22,7 @@ body{
     width: 50%;
     height: 650px;
     float: left;
+
 }
 
 .stopka{
@@ -36,6 +38,13 @@ h4{
 }
 
 button{
+    background-color: #AF4448;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type="submit"]{
     background-color: #AF4448;
     color: white;
     padding: 5px;
