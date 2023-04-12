@@ -2,4 +2,10 @@ kw1.
 SELECT id, imie, nazwisko, rok_urodzenia, zdjecie FROM osoby limit 30;
 
 k2.
-SELECT imie, nazwisko, rok_urodzenia, opis, zdjecie FROM osoby JOIN hobby ON osoby.Ryby_id=ryby.id WHERE ryby.wystepowanie LIKE "%rzeki%";
+SELECT imie, nazwisko, rok_urodzenia, opis, zdjecie FROM osoby INNER JOIN hobby ON osoby.id=hobby.id WHERE osoby.id="10";
+
+kw3.
+SELECT AVG(rok_urodzenia), MIN(rok_urodzenia), MAX(rok_urodzenia) FROM osoby;
+
+kw4.
+UPDATE osoby SET opis='hobby' WHERE hobby_id=4;
