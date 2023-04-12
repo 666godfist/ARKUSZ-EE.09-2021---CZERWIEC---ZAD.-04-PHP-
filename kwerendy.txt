@@ -1,0 +1,5 @@
+kw1.
+SELECT id, imie, nazwisko, rok_urodzenia, zdjecie FROM osoby limit 30;
+
+k2.
+SELECT imie, nazwisko, rok_urodzenia, opis, zdjecie FROM osoby JOIN hobby ON osoby.Ryby_id=ryby.id WHERE ryby.wystepowanie LIKE "%rzeki%";
