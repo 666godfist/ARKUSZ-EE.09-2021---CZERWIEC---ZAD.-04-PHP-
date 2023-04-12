@@ -1,5 +1,6 @@
 body{
     font-family: Helvetica;
+    margin: 0px;
 }
 
 .baner{
@@ -7,6 +8,7 @@ body{
     color: white;
     text-align: center;
     height: 20px;
+    margin: 0px;
 }
 
 .lewy{
@@ -37,6 +39,10 @@ h4{
     margin: 0px;
 }
 
+h3{
+    margin: 0px;
+}
+
 button{
     background-color: #AF4448;
     color: white;
@@ -49,4 +55,9 @@ input[type="submit"]{
     color: white;
     padding: 5px;
     margin: 10px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
 }
